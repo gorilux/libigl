@@ -64,7 +64,7 @@ function(igl_download_cork)
 endfunction()
 
 ## Eigen
-set(LIBIGL_EIGEN_VERSION 3.3.7 CACHE STRING "Default version of Eigen used by libigl.")
+set(LIBIGL_EIGEN_VERSION 3.3.9 CACHE STRING "Default version of Eigen used by libigl.")
 function(igl_download_eigen)
 	igl_download_project(eigen
 		GIT_REPOSITORY https://gitlab.com/libeigen/eigen.git
@@ -77,7 +77,7 @@ endfunction()
 function(igl_download_embree)
 	igl_download_project(embree
 		GIT_REPOSITORY https://github.com/embree/embree.git
-		GIT_TAG        v3.12.1
+		GIT_TAG        v3.13.0
 		${LIBIGL_BRANCH_OPTIONS}
 	)
 endfunction()
